@@ -623,7 +623,7 @@ section#counter-stats {
         padding: 30px 10px; 
     } 
     .header h1 { 
-        font-size: 1.3rem; 
+        font-size: 1rem; 
         margin: 0; 
         margin-bottom: 1rem;
         font-family: 'Cormorant' !important;
@@ -631,6 +631,7 @@ section#counter-stats {
 
     #sub-but {
         margin: 0;
+        margin-top: 0.5rem;
     }
 }
 

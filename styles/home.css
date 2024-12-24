@@ -515,11 +515,13 @@ nav.scrolled,check {
     }
 
     #Services h3 {
-        font-size: 1rem;
+        font-size: 0.7rem;
+        font-family: 'Cormorant';
     }
     
     #Services p {
-        font-size: 0.5rem;
+        font-size: 0.45rem;
+        font-family: 'Rubik';
     }
 
     .skills {
@@ -611,11 +613,12 @@ nav.scrolled,check {
     font-weight: 700;
     position: relative;
     margin-bottom: 70px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     z-index: 999;
 }
 .white-heading{
     color: #ffffff;
+    font-family: 'Cormorant';
 }
 .heading:after {
     content: ' ';
@@ -836,6 +839,25 @@ nav.scrolled,check {
     height: 35px;
 }
 
+@media (max-width: 500px) {
+
+    .testimonial4_slide img {
+        width: 170px;
+    }
+
+    .testimonial4_slide p {
+        font-size: 0.6rem;
+        line-height: 1;
+        margin: 40px 0 20px 0;
+        font-family: 'Rubik';
+        text-align: center;
+        padding: 0rem;
+    }
+    .testimonial4_slide h4 {
+      font-size: 1rem;
+    }
+}
+
 /* ------testimonial  close-------*/
 
 
@@ -865,7 +887,7 @@ nav.scrolled,check {
         padding: 30px 10px; 
     } 
     .header h1 { 
-        font-size: 1.3rem; 
+        font-size: 1rem; 
         margin: 0; 
         margin-bottom: 1rem;
         font-family: 'Cormorant' !important;
@@ -873,6 +895,7 @@ nav.scrolled,check {
 
     #sub-but {
         margin: 0;
+        margin-top: 0.5rem;
     }
 }
 

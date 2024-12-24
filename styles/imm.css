@@ -639,12 +639,6 @@ section#counter-stats {
     padding-bottom: 6rem;
 }
 
-.skillpic {
-    /* border:#041069 solid 1px; */
-    /* border-style: double; */
-    
-}
-
 .skillpic:hover {
     transform: scale(1.4);
     transition-duration: 350ms;

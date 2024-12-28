@@ -255,6 +255,7 @@ body {
     margin-bottom: 5px;
     margin-left: 0px;
     color: #9c9c9c;
+    font-weight: 700;
   }
   
   .contact_us_6 ::placeholder {
@@ -804,7 +805,7 @@ body {
 
 .navbarTitle {
   color: white;
-  margin-left: 2rem;
+  margin-left: 0.3rem;
   font-size: 1.5rem;
 }
 

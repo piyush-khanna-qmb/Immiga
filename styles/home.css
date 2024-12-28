@@ -43,7 +43,7 @@
 }
 .navbarTitle {
     color: white;
-    margin-left: 2rem;
+    margin-left: 0.3rem;
     font-size: 1.5rem;
 }
 
@@ -76,6 +76,7 @@ nav.scrolled,check {
     margin-left: 3rem;
     margin-top: 3rem; /* Keeps the container spaced from the top */
     display: inline-block; /* Prevent `::before` from covering unnecessary space */
+    padding: 1rem;
 }
 
 .page-subtitle-cont {
@@ -84,6 +85,7 @@ nav.scrolled,check {
     margin-left: 3rem;
     margin-top: 15rem; /* Keeps the container spaced from the top */
     display: inline-block; /* Prevent `::before` from covering unnecessary space */
+    padding: 1rem;
 }
 .page-title {
     font-family: 'Cormorant';
@@ -253,7 +255,7 @@ nav.scrolled,check {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     .navbarTitle {
         margin-left: 0rem;
@@ -288,7 +290,7 @@ nav.scrolled,check {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 1rem;
+        padding: 0rem;
     }
 
     .page-title-cont {
@@ -325,7 +327,7 @@ nav.scrolled,check {
 
     #title-but {
         position: relative;
-        margin: 0;
+        margin: -1rem;
         /* Preserve the original button size and animations */
         /* width: 200px;
         height: 70px; */
@@ -414,7 +416,7 @@ nav.scrolled,check {
 }
 
 /* Mobile Responsive */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
     #Features {
         padding-top: 0;
@@ -504,7 +506,7 @@ nav.scrolled,check {
     padding-bottom: 4rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
     #Services {
         padding: 1rem;
@@ -839,7 +841,7 @@ nav.scrolled,check {
     height: 35px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
     .testimonial4_slide img {
         width: 170px;
@@ -881,7 +883,7 @@ nav.scrolled,check {
     margin: 0 auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
     .header { 
         padding: 30px 10px; 
@@ -920,7 +922,7 @@ nav.scrolled,check {
 }
 
 .map-container {
-    height: 300px;
+    height: 380px;
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 25px;
@@ -929,7 +931,7 @@ nav.scrolled,check {
 }
 
 .map-container iframe {
-    width: 100%;
+    width: 35rem;
     height: 100%;
     border: none;
 }
@@ -956,6 +958,8 @@ nav.scrolled,check {
 
 .logo-container {
     margin-bottom: 40px;
+    padding-left: 0;
+    margin-left: -1.5rem;
 }
 
 .logo-container svg {
@@ -1010,7 +1014,7 @@ nav.scrolled,check {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .social-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1046,11 +1050,13 @@ p {
 }
 
 .headeri {
-  position:relative;
-  text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
-}
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+    padding-top: 1rem;
+  }
+
 .logo {
   width:250px;
   fill:white;
@@ -1134,7 +1140,7 @@ p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
     .contenti {
         margin-top: 1rem;
@@ -1174,7 +1180,7 @@ p {
     }
 
     .map-container iframe {
-        width: 100%;
+        width: 35rem;
         height: 100%;
     }
 
@@ -1209,7 +1215,7 @@ p {
     .social-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 0px;
         width: 100%;
         max-width: 280px;
     }
@@ -1282,7 +1288,7 @@ p {
     }
 
     .map-container iframe {
-        width: 100%;
+        width: 35rem;
         height: 100%;
     }
 
@@ -1307,10 +1313,11 @@ p {
     .logo-container {
         margin-bottom: 25px;
         text-align: center;
+        margin-left: 0rem;
     }
 
     .logo-container img {
-        width: 80px;
+        width: 110px;
         height: auto;
     }
 

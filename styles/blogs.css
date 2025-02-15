@@ -1,0 +1,236 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap'); */
+@font-face {
+    font-family: Cormorant;
+    src: url(../resources/fonts/Cormorant/static/Cormorant-Bold.ttf);
+}
+
+@font-face {
+    /* font-family: Cormorant-Title; */
+    font-family: Contact;
+    src: url(../resources/fonts/Cormorant/static/Cormorant-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(../resources/fonts/Rubik/static/Rubik-Light.ttf);
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.navbar-nav {
+  flex-direction: row;
+}
+.nav-item {
+  font-family: 'Cormorant' !important;
+  font-size: 1.3rem;
+}
+.nav-link {
+  color: white !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 0 2rem;
+  margin: 2rem auto;
+}
+
+.navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+  border-right: 3px solid whitesmoke;
+}
+
+.navbar-style
+{
+  /* background-color: #e13833; */
+  background: rgb(184,0,31);
+  background: linear-gradient(170deg, rgba(184,0,31,1) 25%, rgba(255,61,23,1) 75%);
+  color: white; 
+  font-weight: 800;
+}
+
+.navbarTitle {
+  color: white;
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.shift-down {
+  margin-top: 6.5rem;
+}
+nav {
+  transition: all 1.3s ease-in-out;
+  background: transparent;
+  opacity: 0;
+}
+nav.scrolled,check {
+  background: rgb(184,0,31);
+  background: linear-gradient(170deg, rgba(184,0,31,1) 25%, rgba(255,61,23,1) 75%) !important;
+  opacity: 1;
+}
+
+.input:invalid,
+.textinput:invalid {
+    border-color: red !important;
+}
+
+/* Add some transition for smoother validation feedback */
+.input,
+.textinput {
+    transition: border-color 0.3s ease;
+}
+
+/* Style for disabled submit button */
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}  
+
+@media (max-width: 500px) {
+  .navbarTitle {
+    margin-left: 0rem;
+    font-size: 1rem;
+  }
+
+  .navbar-brand img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .nav-item {
+      font-size: 1rem;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+      padding: 0 1rem;
+      margin: 1rem auto;
+  }
+}
+
+.resources {
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  padding-top: 4rem;
+
+}
+
+.resources h1 {
+  font-family: Lastica;
+  color: white;
+  text-align: center;
+  padding: 4rem 0 0rem;
+  font-size: 3rem;
+}
+
+.resources h4 {
+  text-align: left;
+  padding-left: 0.5rem;
+  font-family: Arvo;
+  font-size: large;
+  color: silver;
+  font-style: italic;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body img {
+  width: 640px;
+  height: 250px;
+}
+
+#pricing {
+  padding: 5% 7%;
+  text-align: center;
+}
+
+#pricing button {
+  margin-top: 1rem;
+  font-family: Interphase;    
+}
+
+.dwnld {
+  border: #131FA8 solid 2px;
+}
+.dwnld:hover {
+  background: linear-gradient(to right, #844EEA, #5527F5, #041069);
+  color: white;
+}
+
+.card-footer p {
+  text-align: center;
+  font-weight: bold;
+}
+.pricing-column {
+  padding: 3% 2% 0;
+}
+
+
+/* ===================== Whatsapp ======================= */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  outline: 2px solid #25d366;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+  border-color: white;
+  outline-color: #128C7E;
+}
+
+.whatsapp-float svg {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float svg {
+      width: 45px;
+      height: 45px;
+      padding: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 (function() {
-    emailjs.init("2cuJ5paqCDI0a06Dg");
+    emailjs.init("YF_gI-ZW2x1E-A0Wh");
 })();
 
 // Popup variables
@@ -147,8 +147,8 @@ window.onload = function() {
         };
     
         emailjs.send(
-            "service_lil1y6z",
-            "template_m98g9sf",
+            "service_n85xzkr",
+            "template_2zivtya",
             {
                 from_name: formData.name,
                 phone: formData.phone,

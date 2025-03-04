@@ -628,6 +628,155 @@ section#counter-stats {
   }
 
 
+/* ======================== Countries Dabbe =========================== */
+
+  .countries-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+}
+
+.countries-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.countries-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.countries-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Cormorant';
+    display: inline-block;
+}
+
+.countries-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.countries-header p {
+    color: #d9e0ea;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.country-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.country-image {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 3px solid #3498db;
+}
+
+.country-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.country-name {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.visa-services {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.visa-services li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #505864;
+    font-size: 0.95rem;
+}
+
+.visa-services li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #3498db;
+}
+
+.country-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.country-button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .countries-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .countries-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ======================== Countries Dabbe =========================== */
+
 /* ======================== Skills =========================== */
 
 
@@ -1284,4 +1433,217 @@ p {
         height: 45px;
         padding: 10px;
       }
+  }
+  
+  :root {
+    --primary: #2563eb;
+    --secondary: #0f172a;
+    --accent: #60a5fa;
+    --light: #f8fafc;
+    --success: #22c55e;
+    --border: #e2e8f0;
+  }
+  
+  body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    margin-top: 2%;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    font-family: 'Cormorant';
+  }
+  
+  .section-header h2:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background-color: var(--primary);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #64748b;
+  }
+  
+  .roadmap-container {
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .roadmap-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: var(--primary);
+    transform: translateX(-50%);
+  }
+  
+  .roadmap-steps {
+    position: relative;
+  }
+  
+  .step {
+    display: flex;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  
+  .step-content {
+    width: 45%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+  }
+  
+  .step-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step:nth-child(odd) .step-content {
+    text-align: left;
+  }
+  
+  .step-number {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 0 0 4px white, 0 0 0 6px var(--accent);
+  }
+  
+  .step-title {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Cormorant';
+  }
+  
+  .step:nth-child(odd) .step-title {
+    justify-content: flex-start;
+  }
+  
+  .step-title i {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: var(--primary);
+  }
+  
+  .step:nth-child(odd) .step-title i {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  
+  .step-description {
+    color: #64748b;
+    margin-bottom: 15px;
+  }
+  
+  .step-highlight {
+    background-color: #f0f9ff;
+    border-left: 3px solid var(--accent);
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .free-consultation {
+    background-color: #ecfdf5;
+    border-left: 3px solid var(--success);
+  }
+  
+  .flexible-payment {
+    background-color: #fff7ed;
+    border-left: 3px solid #fb923c;
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    .roadmap-line {
+      left: 20px;
+    }
+    
+    .step, .step:nth-child(odd) {
+      flex-direction: column;
+      padding-left: 60px;
+    }
+    
+    .step-content, .step:nth-child(odd) .step-content {
+      width: 100%;
+      text-align: left;
+    }
+    
+    .step-number {
+      left: 20px;
+      top: 0;
+    }
+    
+    .step-title, .step:nth-child(odd) .step-title {
+      justify-content: flex-start;
+    }
+    
+    .step-title i, .step:nth-child(odd) .step-title i {
+      margin-right: 10px;
+      margin-left: 0;
+    }
+  }
+  
+  /* Animation classes */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
   }
